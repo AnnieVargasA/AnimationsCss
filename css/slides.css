@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*
+
+Esta es una línea del tiempo.
+Se declara: 
+  @keyframes nombreDeMiAnimación{
+    0%{}  \
+    50%{}  > Dependiendo de la como declares las animaciones se irán cumpliendo  
+    100%{}/
+  }
+
+*/
+@keyframes Slides{
+  0%{
+    opacity:1;
+  } 
+  20%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/*
+En caso de tener problemas con "equisnavegador" se crean los prefijos "webkit"
+*/
+@-webkit-keyframes Slides{
+  0%{
+    opacity:1;
+  } 
+  20%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-moz-keyframes Slides{
+  0%{
+    opacity:1;
+  } 
+  20%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+#fondo1{
+  position:absolute;
+  width: 100%;
+  height: 100vh;
+  background: url(https://res.cloudinary.com/dzgncebhe/image/upload/v1587955757/Animaciones%20CSS/Slides/background4_jxkvgl.jpg);
+  animation: Slides 25s linear 18s infinite;
+  -webkit-animation: Slides 25s linear 18s infinite;
+  -moz-animation: Slides 25s linear 18s infinite;
+}
+#fondo2{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: url(https://res.cloudinary.com/dzgncebhe/image/upload/v1587955757/Animaciones%20CSS/Slides/background2_tbhzu7.jpg);
+  background-size: cover;
+  animation: Slides 25s linear 12s infinite;
+  -webkit-animation: Slides 25s linear 12s infinite;
+  -moz-animation: Slides 25s linear 12s infinite;
+}
+
+#fondo3{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: url(https://res.cloudinary.com/dzgncebhe/image/upload/v1587955757/Animaciones%20CSS/Slides/background3_coai4m.jpgg);
+  background-size: cover;
+  animation: Slides 25s linear 6s infinite;
+  -webkit-animation: Slides 25s linear 6s infinite;
+  -moz-animation: Slides 25s linear 6s infinite;
+}
+#fondo4{
+  position:absolute;
+  width: 100%;
+  height: 100vh;
+  background: url(https://res.cloudinary.com/dzgncebhe/image/upload/v1587955757/Animaciones%20CSS/Slides/background_eet0kb.jpg);
+  animation: Slides 25s linear 0s infinite;
+  -webkit-animation: Slides 25s linear 0s infinite;
+  -moz-animation: Slides 25s linear 0s infinite;
+}
