@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/*Inicia Botonera Mobile*/
+nav#botoneraMovil{
+  position: absolute;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  top:50px;
+  left:-100%;
+  transition: left .5s ease-out;
+  -webkit-transition: left .5s ease-out;
+  -moz-transition: left .5s ease-out;
+  -ms-transition: left .5s ease-out;
+  -o-transition: left .5s ease-out;
+}
+nav#botoneraMovil ul li{
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: #ccc;
+  color: black;
+}
+nav#botoneraMovil ul li:hover{
+  background-color: #aaa;
+}
+
+label#labelMovil span{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url(https://res.cloudinary.com/dzgncebhe/image/upload/v1588112360/Animaciones%20CSS/Botonera%20M%C3%B3vil/boton1_zqqvcf.jpg) no-repeat;
+  margin:5px;
+  cursor: pointer;
+}
+input#botonMovil{
+  display:none;
+}
+label#labelMovil h2{
+  position: absolute;
+  top:10px;
+  left:60px;
+}
+label#labelMovil span:hover{
+  background: url(https://res.cloudinary.com/dzgncebhe/image/upload/v1588112360/Animaciones%20CSS/Botonera%20M%C3%B3vil/boton2_mutft5.jpg) no-repeat;
+}
+input#botonMovil:checked + label#labelMovil span{
+  background: url(https://res.cloudinary.com/dzgncebhe/image/upload/v1588112360/Animaciones%20CSS/Botonera%20M%C3%B3vil/boton3_rjjbiz.jpg) no-repeat;
+}
+input#botonMovil:checked ~ nav#botoneraMovil{
+  left:0;
+}
