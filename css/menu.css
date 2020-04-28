@@ -21,9 +21,41 @@ header{
 }
 .nivel1{
   float: left;
-  width: 20%;
+  width: 19.2%;
   text-align: center;
-  line-height: 50px;
-  background: linear-gradient(#900, #600);
+  line-height: 42px;
+  background: radial-gradient(#900, #600);
+  border:4px solid white;
+}
+.nivel1 a{
   color: white;
+}
+.nivel1:hover{
+  background: purple;
+}
+.nivel2{
+  position: relative;
+  left: -4px;
+  width:100%;
+  text-align: center;
+  line-height: 42px;
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+  background-color: silver;
+  color: black;
+}
+.nivel2:hover{
+  background: blue;
+  color:white;
+  transition: background .5s ease-out;
+  -webkit-transition: background .5s ease-out;
+  -moz-transition: background .5s ease-out;
+  -ms-transition: background .5s ease-out;
+  -o-transition: background .5s ease-out;
+}
+#menuTop ul li ul{
+  display:none;
+}
+#menuTop ul li:hover ul{
+  display:block;
 }
