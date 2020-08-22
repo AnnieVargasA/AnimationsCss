@@ -19,7 +19,7 @@ input#bloque1:checked ~ #cont1{
 input#bloque2:checked ~ #cont2{
   height: 700px;
 }
-input#bloque2:checked ~ #cont3{
+input#bloque3:checked ~ #cont3{
   height: 700px;
 }
 #acordeon label{
