@@ -47,9 +47,8 @@ input#bloque3:checked ~ #cont3{
   padding: 5%;
 }
 #acordeon img{
-  padding 0% 5%;
-  width: 400px;
-  height: 500px;
+  padding: 0 5%;
+  width: 600px;
   align-self: center;
 }
 #acordeon p{
