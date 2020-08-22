@@ -29,3 +29,14 @@
   background-color: white;
   color:#192A54;
 }
+@media screen and (max-width:768px){
+  .menuContainer{
+    width: 100%;
+    flex-direction:column;
+    justify-content: center;
+  }
+  .menuLink{
+    width: 90%;
+    padding: 25px 0;
+  }
+}
